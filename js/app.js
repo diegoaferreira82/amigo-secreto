@@ -4,7 +4,7 @@ let listaAmigos = document.getElementById('lista-amigos');
 
 function adicionar() {
     let nomeAmigo = document.getElementById('nome-amigo').value;
-    if (!amigos.includes(nomeAmigo)) {
+    if (!amigos.includes(nomeAmigo) && nomeAmigo != '') {
         amigos.push(nomeAmigo);
         listaAmigos.textContent = amigos;
     }
